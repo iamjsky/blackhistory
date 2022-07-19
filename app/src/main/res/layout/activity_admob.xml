@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+ android:gravity="center"
+       android:paddingTop="20dp"
+    >
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:src="@drawable/title"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_border_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/rounded_1"
+                android:id="@+id/admob_btn"
+                android:fontFamily="@font/kopubbold"
+                android:text="광 고 보 기"
+                android:textSize="15dp"
+                android:layout_width="180dp"
+                android:layout_height="40dp" />
+           <TextView
+android:visibility="gone"
+               android:id="@+id/count"
+               android:textColor="@color/colorBlack"
+
+               android:gravity="center"
+               android:text="20"
+               android:fontFamily="@font/kopubbold"
+               android:textSize="100dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/arith_layer"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+
+                  android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:fontFamily="@font/bmyeonsung"
+                        android:text="24"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:id="@+id/x_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:fontFamily="@font/bmyeonsung"
+                        android:text="X"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:id="@+id/arith_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:fontFamily="@font/bmyeonsung"
+                        android:text="24"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:id="@+id/y_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="="
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:fontFamily="@font/bmyeonsung"
+
+                        android:digits="0123456789"
+                        android:id="@+id/arithResult_et"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                   android:hint="정답 입력"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:background="@drawable/bg_border_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+                </LinearLayout>
+                <Button
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/rounded_1"
+                    android:id="@+id/result_btn"
+                    android:fontFamily="@font/kopubbold"
+                    android:text="정 답 확 인"
+                    android:textSize="15dp"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+<LinearLayout
+    android:id="@+id/isoutgoing"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:fontFamily="@font/bmyeonsung"
+        android:layout_marginBottom="5dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorBlack"
+        android:text="광고 시청 or 20초 후 문제를 맞추시게 되면 해당번호의"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:fontFamily="@font/bmyeonsung"
+        android:layout_marginBottom="15dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorBlack"
+        android:text="발신제한이 해제되게 됩니다."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:fontFamily="@font/bmyeonsung"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"
+        android:text="술김에 건 전화 라면.."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:fontFamily="@font/bmyeonsung"
+        android:layout_marginBottom="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"
+        android:text="내일 아침의 너의 모습을 상상해 보십시요."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:fontFamily="@font/bmyeonsung"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="25dp"
+        android:text="맨정신에 만나요~"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+        <LinearLayout
+      android:visibility="gone"
+            android:id="@+id/isdefault"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/bmyeonsung"
+                android:layout_marginBottom="15dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorBlack"
+                android:text="흑역사 앱 잠금시간입니다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:fontFamily="@font/bmyeonsung"
+                android:layout_marginBottom="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"
+                android:text="흑역사 앱은 20시부터 06시까지 잠겨있습니다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:fontFamily="@font/bmyeonsung"
+                android:layout_marginBottom="15dp"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"
+                android:text="잠금을 해지하시려면 광고 시청 or 20초 후 문제를 푸시면 흑역사 앱으로 들어갈 수 있어요."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:fontFamily="@font/bmyeonsung"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="25dp"
+                android:text="맨정신에 만나요~"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <Button
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rounded_1"
+            android:id="@+id/cancel_btn"
+            android:fontFamily="@font/kopubbold"
+            android:text="취        소"
+            android:textSize="15dp"
+            android:layout_width="180dp"
+            android:layout_height="40dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-2054632754477298/7015993743">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+</LinearLayout>

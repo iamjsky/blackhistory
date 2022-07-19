@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "197315693290",
+    "firebase_url": "https://blackhistory-5c563.firebaseio.com",
+    "project_id": "blackhistory-5c563",
+    "storage_bucket": "blackhistory-5c563.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197315693290:android:c706cf1565b788ad",
+        "android_client_info": {
+          "package_name": "com.blackhistory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197315693290-59eaushf4g90vq0kvdt32me6kr2o6dk2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOgg8YxJV-kAmtJBCFnZNbSOaBoIWylAw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-8612161317901336~5661226656"
+    }
+  ],
+  "configuration_version": "1"
+}

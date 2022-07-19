@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">흑역사</string>
+    <string name="google_admob_app_id">ca-app-pub-2054632754477298~4404064856</string>
+    <string name="google_rewarded_ad_id">ca-app-pub-2054632754477298/3186228241</string>
+    <string name="google_rewarded_ad_id2">ca-app-pub-8612161317901336/9929915784</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2054632754477298/7015993743</string>
+    <string name="start_time">2200</string>
+    <string name="end_time">600</string>
+
+</resources>

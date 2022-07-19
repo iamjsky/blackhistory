@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+      >
+
+        <ImageView
+
+            android:adjustViewBounds="true"
+            android:src="@drawable/title"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+    <Button
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:text="주소록에서 가져오기"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_1"
+        android:id="@+id/address_btn"
+        android:fontFamily="@font/kopubbold"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_weight="1"
+       android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:fontFamily="@font/kopubbold"
+                android:textSize="15dp"
+                android:text="이      름 :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:imeOptions="actionDone"
+                android:inputType="text"
+android:paddingLeft="10dp"
+                android:fontFamily="@font/kopublight"
+                android:id="@+id/name_et"
+
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+
+                android:fontFamily="@font/kopubbold"
+                android:textSize="15dp"
+                android:text="전화번호 :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:imeOptions="actionDone"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/kopublight"
+                android:digits="0123456789-"
+                android:inputType="phone"
+                android:id="@+id/number_et"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:imeOptions="actionDone"
+android:inputType="text"
+                android:fontFamily="@font/kopubbold"
+                android:textSize="15dp"
+                android:text="메      모"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:fontFamily="@font/kopublight"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_border_1"
+                android:id="@+id/memo_et"
+
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+<LinearLayout
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:fontFamily="@font/bmyeonsung"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="25dp"
+        android:text="※ 필독사항"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/kopublight"
+        android:textColor="@color/colorBlack"
+        android:textSize="12dp"
+        android:text="등록된 번호는 발신을 제한합니다."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:fontFamily="@font/kopublight"
+            android:textColor="@color/colorBlack"
+            android:textSize="12dp"
+            android:text="해당번호의 발신 감지시 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:fontFamily="@font/bmyeonsung"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:text="'흑역사 제작 방지'"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:fontFamily="@font/kopublight"
+            android:textColor="@color/colorBlack"
+            android:textSize="12dp"
+            android:text="를 위한"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/kopublight"
+        android:textColor="@color/colorBlack"
+        android:textSize="12dp"
+        android:text="광고 및 퀴즈가 제공되며 정답을 맞출 시 발신제한이 자동으로 해제되게 됩니다."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/kopublight"
+        android:textColor="@color/colorBlack"
+        android:textSize="12dp"
+        android:text="흑역사는 언제나 여러분의 상쾌한 아침을 응원합니다."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:fontFamily="@font/bmyeonsung"
+        android:textColor="@color/colorBlack"
+        android:textSize="25dp"
+        android:text="맨정신에 만나요~"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+android:fontFamily="@font/bmyeonsung"
+        android:gravity="right"
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp"
+        android:text="-흑역사 제작진 일동-"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <Button
+            android:layout_margin="5dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rounded_1"
+            android:layout_weight="1"
+            android:id="@+id/cancel_btn"
+            android:fontFamily="@font/kopubbold"
+            android:text="취        소"
+            android:textSize="15dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_margin="5dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rounded_1"
+            android:layout_weight="1"
+            android:id="@+id/add_btn"
+            android:fontFamily="@font/kopubbold"
+            android:text="등        록"
+            android:textSize="15dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+
+
+            <Button
+                android:layout_margin="5dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/rounded_1"
+                android:layout_weight="1"
+                android:id="@+id/delete_btn"
+                android:fontFamily="@font/kopubbold"
+                android:text="삭        제"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:layout_height="40dp" />
+            <Button
+                android:layout_margin="5dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/rounded_1"
+                android:layout_weight="1"
+                android:id="@+id/modify_btn"
+                android:fontFamily="@font/kopubbold"
+                android:text="수        정"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:layout_height="40dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
